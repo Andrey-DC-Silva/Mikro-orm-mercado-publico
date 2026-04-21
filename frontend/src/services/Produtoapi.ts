@@ -13,7 +13,7 @@ export async function getProdutos() {
   const data = await res.json();
 
   if (!res.ok) {
-    console.error('ERRO BACKEND:', data);
+    console.error('Error:', data);
     return [];
   }
 

@@ -19,11 +19,13 @@
 body {
     margin: 0;
     padding: 0;
+    margin-top: 80px;
     background: radial-gradient(circle at top, #111827, var(--bg));
     color: var(--text);
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
+/* melhora hierarquia geral */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -31,7 +33,7 @@ body {
 }
 
 .header {
-    margin-bottom: 28px;
+    margin-bottom: 32px;
 }
 
 .header h1 {
@@ -40,10 +42,12 @@ body {
     letter-spacing: -0.5px;
 }
 
+/* 🔥 MELHORIA PRINCIPAL */
 .layout {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 28px;
+    align-items: start;
 }
 
 @media (max-width: 768px) {
@@ -57,21 +61,25 @@ body {
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 22px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
     backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
 .card h2 {
     font-size: 18px;
-    margin-bottom: 14px;
+    margin: 0;
 }
 
 .card h3 {
     font-size: 14px;
     color: var(--muted);
-    margin-top: 18px;
+    margin-top: 12px;
 }
 
+/* listas mais limpas */
 .list {
     list-style: none;
     margin: 0;
@@ -82,7 +90,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 0;
+    padding: 14px 0;
     border-bottom: 1px solid var(--border);
     gap: 10px;
 }
@@ -92,6 +100,7 @@ body {
     color: var(--muted);
 }
 
+/* forms */
 .form {
     display: flex;
     flex-direction: column;
@@ -117,6 +126,7 @@ select:focus {
     background: var(--card);
 }
 
+/* botões */
 button {
     padding: 10px 12px;
     border-radius: 10px;
@@ -130,7 +140,7 @@ button {
 
 button:hover {
     background: var(--primary-hover);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
 }
 
 button:active {
@@ -140,13 +150,9 @@ button:active {
 button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
-    transform: none;
 }
 
-button + button {
-    margin-top: 6px;
-}
-
+/* botão remover */
 .item button {
     background: rgba(239, 68, 68, 0.15);
     color: #ffb4b4;
@@ -160,6 +166,7 @@ button + button {
     color: white;
 }
 
+/* input com ícone */
 .input-wrapper {
     display: flex;
     align-items: center;
@@ -168,7 +175,6 @@ button + button {
     border-radius: 10px;
     border: 1px solid var(--border);
     background: rgba(255, 255, 255, 0.03);
-    transition: 0.2s ease;
 }
 
 .input-wrapper:focus-within {
@@ -184,11 +190,81 @@ button + button {
     color: var(--text);
 }
 
-.input-wrapper input:focus {
-    outline: none;
-}
-
+/* ícones */
 .icon {
     color: var(--muted);
     font-size: 14px;
+}
+
+/* produtos */
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+}
+
+.produto-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.25s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary);
+    box-shadow: 0 10px 25px rgba(79, 124, 255, 0.15);
+}
+
+.produto-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.produto-icon {
+    font-size: 18px;
+    color: var(--primary);
+}
+
+.produto-nome {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.produto-preco {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+/* navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(11, 15, 23, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+}
+
+.navbar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 28px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    display: flex;
+    align-items: center;
 }
