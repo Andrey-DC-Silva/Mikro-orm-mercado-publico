@@ -1,0 +1,1 @@
+{"version":3,"file":"ProdutoService.d.ts","sourceRoot":"","sources":["../../src/services/ProdutoService.ts"],"names":[],"mappings":"AAGA,qBAAa,cAAc;IACb,OAAO,CAAC,EAAE;gBAAF,EAAE,EAAE,GAAG;IAErB,cAAc;IAId,aAAa,CAAC,EAAE,EAAE,MAAM;IAIxB,YAAY,CAAC,IAAI,EAAE,GAAG;IAMtB,gBAAgB,CAAC,EAAE,EAAE,MAAM,EAAE,IAAI,EAAE,GAAG;IAOtC,cAAc,CAAC,EAAE,EAAE,MAAM;CAIhC"}

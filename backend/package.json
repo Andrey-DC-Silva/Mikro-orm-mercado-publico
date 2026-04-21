@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "tsx watch src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "mikro": "tsx node_modules/mikro-orm",
+    "migration:create": "tsx ./node_modules/@mikro-orm/cli/cli.js migration:create"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "overrides": {
+    "ajv": "^8.17.1"
+  },
+  "dependencies": {
+    "@mikro-orm/core": "^6.6.13",
+    "@mikro-orm/postgresql": "^6.6.13",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "pg": "^8.20.0",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@mikro-orm/cli": "^6.6.13",
+    "@mikro-orm/migrations": "^6.6.13",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.6.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  }
+}

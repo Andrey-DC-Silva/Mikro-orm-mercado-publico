@@ -1,0 +1,1 @@
+{"version":3,"file":"Migration20260421044624_rename_usuario_table.d.ts","sourceRoot":"","sources":["../../src/migrations/Migration20260421044624_rename_usuario_table.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,uBAAuB,CAAC;AAElD,qBAAa,4CAA6C,SAAQ,SAAS;IAE1D,EAAE,IAAI,OAAO,CAAC,IAAI,CAAC;IAInB,IAAI,IAAI,OAAO,CAAC,IAAI,CAAC;CAIrC"}
