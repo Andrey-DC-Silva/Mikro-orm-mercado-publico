@@ -25,7 +25,6 @@ body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
-/* melhora hierarquia geral */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -42,7 +41,6 @@ body {
     letter-spacing: -0.5px;
 }
 
-/* 🔥 MELHORIA PRINCIPAL */
 .layout {
     display: grid;
     grid-template-columns: 2.2fr 1fr;
@@ -79,7 +77,6 @@ body {
     margin-top: 12px;
 }
 
-/* listas mais limpas */
 .list {
     list-style: none;
     margin: 0;
@@ -100,7 +97,6 @@ body {
     color: var(--muted);
 }
 
-/* forms */
 .form {
     display: flex;
     flex-direction: column;
@@ -126,7 +122,6 @@ select:focus {
     background: var(--card);
 }
 
-/* botões */
 button {
     padding: 10px 12px;
     border-radius: 10px;
@@ -152,7 +147,6 @@ button:disabled {
     cursor: not-allowed;
 }
 
-/* botão remover */
 .item button {
     background: rgba(239, 68, 68, 0.15);
     color: #ffb4b4;
@@ -166,7 +160,6 @@ button:disabled {
     color: white;
 }
 
-/* input com ícone */
 .input-wrapper {
     display: flex;
     align-items: center;
@@ -190,13 +183,11 @@ button:disabled {
     color: var(--text);
 }
 
-/* ícones */
 .icon {
     color: var(--muted);
     font-size: 14px;
 }
 
-/* produtos */
 .produtos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -241,7 +232,6 @@ button:disabled {
     color: var(--muted);
 }
 
-/* navbar */
 .navbar {
     position: fixed;
     top: 0;

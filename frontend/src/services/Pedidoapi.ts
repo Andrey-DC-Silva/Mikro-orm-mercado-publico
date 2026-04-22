@@ -1,18 +1,6 @@
-import type { Usuario } from "./Usuarioapi";
+import type { Pedido, CreatePedidoDTO } from "../types";
 
 const API_URL = 'http://localhost:3000/api';
-
-export type Pedido = {
-    id: number;
-    usuario: Usuario;
-    total: number;
-    itens: [];
-};
-
-export type CreatePedidoDTO = {
-    usuarioId: number;
-    itens: { produtoId: number; quantidade: number }[];
-};
 
 export async function getPedidos(): Promise<Pedido[]> {
     const res = await fetch(`${API_URL}/pedidos`);

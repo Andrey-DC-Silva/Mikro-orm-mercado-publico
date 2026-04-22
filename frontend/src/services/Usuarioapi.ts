@@ -1,15 +1,5 @@
 const API_URL = 'http://localhost:3000/api';
-
-export type Usuario = {
-  id: number;
-  nome: string;
-  email: string;
-};
-
-export type CreateUsuarioDTO = {
-  nome: string;
-  email: string;
-};
+import type { Usuario, CreateUsuarioDTO } from "../types";
 
 export async function getUsuarios(): Promise<Usuario[]> {
   const res = await fetch(`${API_URL}/usuarios`);
